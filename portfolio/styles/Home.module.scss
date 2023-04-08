@@ -5,27 +5,8 @@
     position: relative;
     top: 0;
     left: 0;
+    -webkit-overflow-scrolling: touch;
+    overflow: scroll;
 }
 
-
-@media screen and (pointer: coarse) {
-    @supports (-webkit-backdrop-filter: blur(1px)) and (not (overscroll-behavior-y: none))  {
-      .container {
-        height: 100%;
-        overflow: hidden;
-        margin: 0px;
-        max-height: 100%; /* or `height: calc(100% - 16px);` if body has default margin */
-        overflow: auto;
-        -webkit-overflow-scrolling: touch;
-      }
-      /* in this case to disable pinch-zoom, set `touch-action: pan-x pan-y;` on `body` instead of `html` */
-    }
-  }
-.container{
-    margin: 0;                                            
-    overscroll-behavior-y: none;
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
-}
 
