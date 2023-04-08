@@ -21,3 +21,13 @@
       /* in this case to disable pinch-zoom, set `touch-action: pan-x pan-y;` on `body` instead of `html` */
     }
   }
+.container{
+    margin: 0;
+    touch-action: none;
+                                            
+    overscroll-behavior-y: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
