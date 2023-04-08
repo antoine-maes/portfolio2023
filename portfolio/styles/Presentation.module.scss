@@ -1,0 +1,109 @@
+.container{
+    display: none;
+}
+.infoContainer{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    display: flex;
+    z-index: 2;
+    color: var(--white);
+    flex-wrap: wrap;
+}
+.Hi{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20vw;
+    font-weight: bold;
+    opacity: 0;
+
+}
+
+.description{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    box-sizing: border-box;
+    padding: 0 var(--paddingHorizontal);
+    font-size: 1.2vw;
+    opacity: 0;
+}
+
+
+
+
+
+
+
+.background{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--black);
+    position: fixed;
+    z-index: 1;
+    opacity: 0;
+
+}
+
+
+
+.circle1{
+    width:25vw;
+    height: 25vw;
+    background-color: var(--grey);
+    position :fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    opacity: 0;
+    margin-top: -5vw;
+    margin-left: -5vw;
+
+    
+}
+.circle2{
+    width:100vh;
+    height: 100vh;
+    margin-top: -50vh;
+    background-color: var(--grey);
+    position :fixed;
+    z-index: 2;
+    top: 50%;
+    right: -50vh;
+    border-radius: 100%;
+    opacity: 0;
+
+}
+.circle3{
+    width:50vw;
+    height: 50vw;
+    background-color: var(--grey);
+    position :fixed;
+    z-index: 2;
+    bottom: -40vw;
+    left: -10vw;
+    border-radius: 100%;
+    opacity: 0;
+
+}
+
+.circle4{
+    width:20vw;
+    height: 20vw;
+    background-color: var(--grey);
+    position :fixed;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+
+    border-radius: 100%;
+    opacity: 0;
+
+}

@@ -1,0 +1,30 @@
+.container{
+    display: none;
+}
+
+.TransitionContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    z-index: 5;
+    background-color: var(--white);
+}
+
+.Projectscontainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    z-index: 4;
+}
+
+.left{
+    flex: 1;
+    background-color: var(--white);
+}
+
+.right{
+    flex:3;
+    background-color: var(--black);
+}

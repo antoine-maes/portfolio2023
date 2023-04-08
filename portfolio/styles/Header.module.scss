@@ -1,0 +1,77 @@
+@media only screen and (min-width: 768px) {
+    .HeaderContainer{
+        position: fixed;
+        top: 0;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 var(--paddingHorizontal);
+        font-weight: 500;
+        font-size: 15px;
+        z-index: 100;
+        mix-blend-mode: difference;
+        
+        .NavContainer{
+            display:flex;
+            gap : 30px;
+        }
+        .NavElement{
+            cursor: pointer;
+        }
+        span{
+            color: var(--white);
+        }
+        .NavContainerHamburger{
+            display:none;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .HeaderContainer{
+        position: fixed;
+        top: 0;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+        font-weight: 500;
+        font-size: 20px;
+        z-index: 100;
+        mix-blend-mode: difference;
+        
+        .NavContainer{
+            display:none;
+        }
+        .NavElement{
+            cursor: pointer;
+        }
+        span{
+            color: var(--white);
+        }
+        .NavContainerHamburger{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            height: 24px;
+            width: 24px;
+        }
+        .Hamburger{
+            width: 100%;
+            height: 3px;
+            background-color: var(--white);
+        }
+
+    }
+
+
+}

@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "^13.1.6",
+    "@react-three/fiber": "^8.11.0",
+    "eslint": "8.33.0",
+    "eslint-config-next": "13.1.6",
+    "gsap": "^3.11.4",
+    "next": "13.1.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.58.0",
+    "three": "^0.149.0"
+  }
+}
