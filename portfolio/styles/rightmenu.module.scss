@@ -1,0 +1,158 @@
+.container{
+    flex: 2;
+    background-color: var(--black);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .up{
+        flex: 6;
+    }
+    .down{
+        flex:10;
+        padding: 0 var(--paddingHorizontal);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-end;
+        .ImagesContainer{
+            flex: 2;
+            width: 100%;
+            max-width: 700px;
+            background-color: var(--white);
+            box-sizing: border-box;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            .overlay{
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 0%;
+                width: 100%;
+                background-color: var(--white);
+            }
+            .left{
+                flex: 2;
+                background-color: lightgray;
+                position: relative;
+            }
+            .right{
+                flex: 1;
+                display: flex;
+                gap: 20px;
+                flex-direction: column;
+                .up{
+                    flex: 1;
+                    background-color: rgb(45, 4, 45);
+                    position: relative;
+                }
+                .down{
+                    flex: 1;
+                    background-color: var(--grey);
+                    position: relative;
+                }
+            }
+        }
+        .DescMoreContainer{
+            flex: 1;
+            width: 100%;
+            max-width: 700px;
+            display: flex;
+            gap: 30px;
+            .DescContainer{
+                flex: 4;
+                background-color: var(--white);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
+                padding: 20px 40px;
+                font-weight: 500;
+                position: relative;
+                .overlay{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 0%;
+                    background-color: var(--white);
+                }
+            }
+            .MoreContainer{
+                height: 100%;
+                aspect-ratio: 1/1;
+                background-color: var(--white);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                transition: all 0.5s ease-in-out;
+                position: relative;
+                span{
+                    font-size: 100px;
+                    font-weight: bold;
+                    margin-top: -12px;
+                }
+                .overlay{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 0%;
+                    background-color: var(--white);
+                }
+            }
+            .MoreContainer:hover{
+                aspect-ratio: 1.5/1;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+    }
+    .footer{
+        flex:1;
+    }
+    
+}
+
+
+
+
+
+
+// @media only screen and (max-width: 768px) {
+//     .container{
+//         .up{
+//             flex: 5;
+//         }
+//         .down{
+//             flex: 7;
+//             padding: 0 40px;
+//             .ImagesContainer{
+//                 flex: 1.5;
+//                 padding: 10px;
+//                 .right{
+//                     display: none;
+//                 }
+//             }
+//             .DescMoreContainer{
+//                 .DescContainer{
+//                     padding: 10px 20px;
+//                     font-size: 3vw;
+//                 }
+//                 .MoreContainer{
+//                     min-width: 75px;
+//                     flex: 1;
+//                     height: auto;
+//                     span{
+//                         font-size: 75px;
+//                     }
+//                 }
+//             }
+//         }
+//         .footer{
+//             flex: 4;
+//         }
+//     }
+// }
+

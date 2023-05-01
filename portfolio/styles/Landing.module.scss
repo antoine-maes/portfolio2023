@@ -17,6 +17,7 @@
     opacity: 1;
     z-index: 1;
     position: fixed;
+    
 }
 
 .text{
@@ -30,30 +31,34 @@
     height: 100%;
     font-size: 8vw;
     font-weight: bold;
-    .leftContainer{
-        display: flex;
-        flex-direction: column;
         .left{
             color: var(--white);
             mix-blend-mode: difference;
             opacity: 1;
         }
         
-    }
-    .rightContainer{
-        display: flex;
-        flex-direction: column;
+    
+    
         .right{
             color: var(--white);
             mix-blend-mode: difference;
             opacity: 1;
             text-align: end;
         }
-    }
+    
     
 }
 
 @media only screen and (max-width: 768px) {
+    .HomeContainer{
+        width: 100vw;
+        height: calc(100vh + 20px);
+        opacity: 1;
+        z-index: 1;
+        position: fixed;
+        margin-top: -20px;
+        
+    }
     .box{
         width: 60vw;
         height: 60vw;
@@ -64,6 +69,8 @@
         top: 50vh;
         margin-top: -30vw;
         border-radius: 0;
+        will-change: transform, opacity;
+        
     }
     
     .text{
@@ -72,35 +79,30 @@
         flex-direction: column;
         box-sizing: border-box;
         padding: 0 40px;
-        justify-content: space-between;
+        justify-content: center;
         width: 100%;
         height: 100%;
         font-size: 13vw;
         font-weight: bold;
-        .leftContainer{
-            padding-top:100px;
-            padding-bottom: 100px;
-            display: flex;
-            flex-direction: column;
+        mix-blend-mode: difference;
+        gap: 100px;
+
+        
             .left{
                 color: var(--white);
                 mix-blend-mode: difference;
                 opacity: 1;
             }
             
-        }
-        .rightContainer{
-            padding-top:100px;
-            padding-bottom: 100px;
-            display: flex;
-            flex-direction: column;
+        
+        
             .right{
                 color: var(--white);
                 mix-blend-mode: difference;
                 opacity: 1;
                 text-align: end;
             }
-        }
+        
         
     }
 }
