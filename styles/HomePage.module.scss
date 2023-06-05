@@ -1,0 +1,47 @@
+.body{
+    background-color: var(--black);
+    width: 100vw;
+    height: 200vh;
+}
+.HomeContainer{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    z-index: 10;
+    flex-direction: column;
+    padding: 100px var(--paddingHorizontal) 0 var(--paddingHorizontal);
+    box-sizing: border-box;
+
+    .left{
+        display: flex;
+        flex-direction: column; 
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+    }
+    span{
+        color: var(--white);
+        mix-blend-mode: difference;
+        font-size: 120px;
+        font-weight: bold;
+    }
+    
+    
+}
+
+
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: var(--white);
+    position: fixed;
+    transform: scale(1);
+    left: 50vw;
+    margin-left: -150px;
+    top: 50vh;
+    margin-top: -150px;
+    
+}
